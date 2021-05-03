@@ -82,5 +82,12 @@ final class ViewControllerViewModel {
         if let product = result?.toObject() as? [String:Any] {
             print("created product with name \(product)")
         }
+        
+        let operatonValue = "1"
+        if let operation = self.context?.objectForKeyedSubscript("startOperation") {
+            if let result = operation.call(withArguments: [operatonValue]) {
+                print("Answer: \(result.toString() ?? "")")
+            }
+        }
     }
 }
