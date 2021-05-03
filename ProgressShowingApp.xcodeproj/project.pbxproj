@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044AB96F263EAA6F00EA6861 /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AB96E263EAA6F00EA6861 /* JSViewController.swift */; };
+		044AB971263EC1E300EA6861 /* JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AB970263EC1E300EA6861 /* JavaScript.swift */; };
 		047B7140263B14390041DC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B713F263B14390041DC76 /* AppDelegate.swift */; };
 		047B7142263B14390041DC76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B7141263B14390041DC76 /* SceneDelegate.swift */; };
 		047B7144263B14390041DC76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B7143263B14390041DC76 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044AB96E263EAA6F00EA6861 /* JSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
+		044AB970263EC1E300EA6861 /* JavaScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScript.swift; sourceTree = "<group>"; };
 		047B713C263B14390041DC76 /* ProgressShowingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressShowingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047B713F263B14390041DC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047B7141263B14390041DC76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				047B7143263B14390041DC76 /* ViewController.swift */,
 				04D3298C263B2414007D0119 /* ViewControllerViewModel.swift */,
 				04D32990263B35A5007D0119 /* JSFunctionCaller.swift */,
+				044AB96E263EAA6F00EA6861 /* JSViewController.swift */,
+				044AB970263EC1E300EA6861 /* JavaScript.swift */,
 				04D3298E263B246F007D0119 /* test-task.js */,
 				047B7145263B14390041DC76 /* Main.storyboard */,
 				047B7148263B143E0041DC76 /* Assets.xcassets */,
@@ -151,8 +157,10 @@
 				047B7144263B14390041DC76 /* ViewController.swift in Sources */,
 				047B7140263B14390041DC76 /* AppDelegate.swift in Sources */,
 				047B7142263B14390041DC76 /* SceneDelegate.swift in Sources */,
+				044AB96F263EAA6F00EA6861 /* JSViewController.swift in Sources */,
 				04D3298D263B2414007D0119 /* ViewControllerViewModel.swift in Sources */,
 				04D32991263B35A5007D0119 /* JSFunctionCaller.swift in Sources */,
+				044AB971263EC1E300EA6861 /* JavaScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

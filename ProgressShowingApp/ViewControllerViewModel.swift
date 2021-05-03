@@ -16,6 +16,24 @@ final class ViewControllerViewModel {
     var jsHandler = JSFunctionCaller()
     
     func loadFile() {
+        
+        guard let url = Bundle.main.url(forResource: "test-task", withExtension: "js") else {
+            fatalError("missing resource mustache.js")
+        }
+
+        do {
+            context?.evaluateScript(try String(contentsOf: url),
+                                    withSourceURL: url)
+            let result = context?.evaluateScript("startOperation('11')")
+            if let product = result?.toObject() as? [String:Any] {
+                print("created product with name \(product)")
+            } else {
+                print("\n\n-----\nError\n-----\n\n")
+            }
+        } catch (let error) {
+            print("Error while processing script file: \(error)")
+        }
+        
         // 1
         guard let
           commonJSPath = Bundle.main.path(forResource: "test-task", ofType: "js") else {
@@ -35,9 +53,7 @@ final class ViewControllerViewModel {
     }
     
     func loadJSFile() {
-        // load javascript file in String
-        // needed update from http://k33g.github.io/2014/06/10/SWIFT-01.html
-
+        loadFile()
         let fileLocation = Bundle.main.path(forResource: "test-task", ofType: "js")!
 
         print(fileLocation)
